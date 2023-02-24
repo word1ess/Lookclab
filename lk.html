@@ -1,0 +1,694 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Личный кабинет</title>
+</head>
+    <body> 
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
+                </a>
+            </div>
+            <div class="header__burger">
+                <span>
+
+                </span>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__links">
+                    <li>
+                        <a href="./catalog.html" class="header__link">
+                            Каталог
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="header__link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="header__links__cart">
+                        <a href="./cart.html" class="header__link">
+                            Коризна
+                        </a>
+                        <div class="cart-header">
+                            <div class="cart-header__item">
+                                <div class="cart-header__img">
+                                    <img src="img/catalog/1.png" alt="">
+                                </div>
+                                <div class="cart-header__info">
+                                    <p class="product__name">Мужская черная оверсайз футболка</p>
+                                    <div class="product__btns">
+                                        <div class="product__plus">+</div>
+                                        <div class="product__price">3 200 </div>
+                                        <div class="product__rub">₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-header__item">
+                                <div class="cart-header__img">
+                                    <img src="img/catalog/1.png" alt="">
+                                </div>
+                                <div class="cart-header__info">
+                                    <p class="product__name">Мужская черная оверсайз футболка</p>
+                                    <div class="product__btns">
+                                        <div class="product__plus">+</div>
+                                        <div class="product__price">3 200 </div>
+                                        <div class="product__rub">₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-header__item">
+                                <div class="cart-header__img">
+                                    <img src="img/catalog/1.png" alt="">
+                                </div>
+                                <div class="cart-header__info">
+                                    <p class="product__name">Мужская черная оверсайз футболка</p>
+                                    <div class="product__btns">
+                                        <div class="product__plus">+</div>
+                                        <div class="product__price">3 200 </div>
+                                        <div class="product__rub">₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-header__item">
+                                <div class="cart-header__img">
+                                    <img src="img/catalog/1.png" alt="">
+                                </div>
+                                <div class="cart-header__info">
+                                    <p class="product__name">Мужская черная оверсайз футболка</p>
+                                    <div class="product__btns">
+                                        <div class="product__plus">+</div>
+                                        <div class="product__price">3 200 </div>
+                                        <div class="product__rub">₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-header__sum">
+                                    <p>Сумма заказа</p>
+                                    <p>22 400 <span>₽</span></p>
+                                    <a href="#" class="cart-header__btn">Посмотреть коллекцию</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./lk.html" class="header__link lk">
+                            <div class="img">
+                                <img src="img/all/account.png" alt="">
+                            </div>
+                            <p>Evgeniy.T</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+            <svg display="none">
+                <symbol id="delivery" viewBox="0 0 21 20">
+                    <g>
+            
+                        <path
+                            d="M1 13.1079V17.2757C0.999995 17.5021 1.04459 17.7263 1.13124 17.9355C1.21788 18.1447 1.34489 18.3348 1.505 18.4949C1.6651 18.655 1.85518 18.782 2.06437 18.8687C2.27357 18.9553 2.49778 18.9999 2.72421 18.9999H7.874"
+                             stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M1 4V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H17C17.5304 1 18.0391 1.21071 18.4142 1.58579C18.7893 1.96086 19 2.46957 19 3V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H14.5913"
+                             stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M1 13.108L8.19805 19.2777C8.74177 19.7438 9.43428 20 10.1504 20H13.4391C13.6608 20 13.8777 19.9359 14.0639 19.8155C14.25 19.695 14.3973 19.5233 14.4881 19.3211C14.579 19.1189 14.6094 18.8947 14.5758 18.6756C14.5421 18.4564 14.4459 18.2517 14.2986 18.086L12 15.5V14.5H14.0629C14.444 14.5 14.8096 14.3486 15.0791 14.0791C15.3486 13.8096 15.5 13.444 15.5 13.0629V13.0629C15.5 12.7447 15.3945 12.4356 15.1999 12.1839C15.0053 11.9322 14.7327 11.7521 14.4248 11.672L8 10L1 4"
+                             stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8.00011 10L4.146 15.8029"  stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 1H13V3C13 3.26522 12.8946 3.51957 12.7071 3.70711C12.5196 3.89464 12.2652 4 12 4H8C7.73478 4 7.48043 3.89464 7.29289 3.70711C7.10536 3.51957 7 3.26522 7 3V1Z"
+                             stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                </symbol>
+            </svg>
+            <svg display="none">
+                <symbol id="pay" viewBox="0 0 20 17">
+                    <g>
+                        <path d="M6.62062 7.70223L8.41095 15.1732C8.63436 16.1042 9.96776 16.3048 10.4965 15.4873L18.8355 2.59751C19.2914 1.89438 18.7456 1 17.861 1H2.14023C1.12628 1 0.618803 2.13626 1.33554 2.80095L6.62062 7.70223V7.70223Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.8387 1.5249L6.6167 7.70306"  stroke-linecap="square" stroke-linejoin="round"/>
+                    </g>
+                </symbol>
+            </svg>
+            <svg display="none">
+                <symbol id="noty" viewBox="0 0 16 19">
+                    <g>
+                        <path d="M13.2017 14.859V14.859C14.1927 14.859 14.9969 14.012 15 12.965V12.965C14.9994 12.4323 14.7981 11.9217 14.4406 11.546L13.2491 10.286V6.543V6.544C13.2491 3.48213 10.8998 1 8.00189 1C8.00031 1 7.99874 1 7.99716 1H7.99716C5.10035 1.00111 2.75241 3.48231 2.75189 6.543V10.283L1.5603 11.543V11.543C1.20257 11.9186 1.00098 12.4291 1 12.962V12.962C1.00312 14.009 1.8073 14.856 2.79825 14.856L13.2017 14.859Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.59631 18H9.39499"  stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </symbol>
+            </svg>
+            <svg display="none">
+                <symbol id="order" viewBox="0 0 20 20">
+                    <g>
+                        <path d="M6.00063 1L3.89062 4.777"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.0005 1L15.3005 4.777"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.0005 19C11.2395 19 9.00049 16.761 9.00049 14C9.00049 11.239 11.2395 9 14.0005 9C16.7625 9 19.0005 11.239 19.0005 14C19.0005 16.761 16.7625 19 14.0005 19Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.4415 10.3753L18.1445 7.12934C18.4065 5.92034 17.4875 4.77734 16.2485 4.77734H2.94047C1.70447 4.77734 0.783468 5.92034 1.04447 7.12934L2.51547 13.9213C2.70747 14.8143 3.49747 15.4503 4.41147 15.4503H9.21547"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.8813 12.3145V14.2675L15.4173 15.2045"  stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </symbol>
+            </svg>
+            <svg display="none">
+                <symbol id="wallet" viewBox="0 0 20 21">
+                    <g>
+                        <path d="M19.9999 9.78809H16.22C15.3924 9.78809 14.7222 10.438 14.7222 11.2405V12.4298C14.7222 13.2323 15.3924 13.8822 16.22 13.8822H19.9999"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.8889 18.9998H3.11111C1.94472 18.9998 1 18.0838 1 16.9528V6.71747C1 5.58647 1.94472 4.67041 3.11111 4.67041H17.8889C19.0553 4.67041 20 5.58647 20 6.71747V16.9528C20 18.0838 19.0553 18.9998 17.8889 18.9998Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6111 4.67064L9.13513 1.30015C8.7224 0.89995 8.05424 0.89995 7.64257 1.30015L4.16663 4.67064"  stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 2.62358L11.8648 1.30015C12.2776 0.89995 12.9457 0.89995 13.3574 1.30015L16.8333 4.67064"  stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </symbol>
+            </svg>
+            <svg display="none">
+                <symbol id="shelter" viewBox="0 0 20 21">
+                    <g>
+                        <path opacity="0.8" d="M32.12 16V4.48H33.296V9.672H39.664V4.48H40.832V16H39.664V10.8H33.296V16H32.12ZM45.5451 16.24C44.8945 16.24 44.3478 16.1227 43.9051 15.888C43.4678 15.6533 43.1398 15.3413 42.9211 14.952C42.7025 14.5627 42.5931 14.1387 42.5931 13.68C42.5931 13.2107 42.6865 12.8107 42.8731 12.48C43.0651 12.144 43.3238 11.8693 43.6491 11.656C43.9798 11.4427 44.3611 11.28 44.7931 11.168C45.2305 11.0613 45.7131 10.968 46.2411 10.888C46.7745 10.8027 47.2945 10.7307 47.8011 10.672C48.3131 10.608 48.7611 10.5467 49.1451 10.488L48.7291 10.744C48.7451 9.89067 48.5798 9.25867 48.2331 8.848C47.8865 8.43733 47.2838 8.232 46.4251 8.232C45.8331 8.232 45.3318 8.36533 44.9211 8.632C44.5158 8.89867 44.2305 9.32 44.0651 9.896L42.9211 9.56C43.1185 8.78667 43.5158 8.18667 44.1131 7.76C44.7105 7.33333 45.4865 7.12 46.4411 7.12C47.2305 7.12 47.8998 7.26933 48.4491 7.568C49.0038 7.86133 49.3958 8.288 49.6251 8.848C49.7318 9.09867 49.8011 9.37867 49.8331 9.688C49.8651 9.99733 49.8811 10.312 49.8811 10.632V16H48.8331V13.832L49.1371 13.96C48.8438 14.7013 48.3878 15.2667 47.7691 15.656C47.1505 16.0453 46.4091 16.24 45.5451 16.24ZM45.6811 15.224C46.2305 15.224 46.7105 15.1253 47.1211 14.928C47.5318 14.7307 47.8625 14.4613 48.1131 14.12C48.3638 13.7733 48.5265 13.384 48.6011 12.952C48.6651 12.6747 48.6998 12.3707 48.7051 12.04C48.7105 11.704 48.7131 11.4533 48.7131 11.288L49.1611 11.52C48.7611 11.5733 48.3265 11.6267 47.8571 11.68C47.3931 11.7333 46.9345 11.7947 46.4811 11.864C46.0331 11.9333 45.6278 12.016 45.2651 12.112C45.0198 12.1813 44.7825 12.28 44.5531 12.408C44.3238 12.5307 44.1345 12.696 43.9851 12.904C43.8411 13.112 43.7691 13.3707 43.7691 13.68C43.7691 13.9307 43.8305 14.1733 43.9531 14.408C44.0811 14.6427 44.2838 14.8373 44.5611 14.992C44.8438 15.1467 45.2171 15.224 45.6811 15.224ZM55.5477 16.24C54.6784 16.24 53.9424 16.0453 53.3398 15.656C52.7371 15.2667 52.2784 14.7307 51.9638 14.048C51.6544 13.36 51.4944 12.5707 51.4838 11.68C51.4944 10.7733 51.6598 9.97867 51.9798 9.296C52.2998 8.608 52.7611 8.07467 53.3638 7.696C53.9664 7.312 54.6971 7.12 55.5558 7.12C56.4304 7.12 57.1904 7.33333 57.8358 7.76C58.4864 8.18667 58.9318 8.77067 59.1718 9.512L58.0198 9.88C57.8171 9.36267 57.4944 8.96267 57.0518 8.68C56.6144 8.392 56.1131 8.248 55.5477 8.248C54.9131 8.248 54.3878 8.39467 53.9718 8.688C53.5558 8.976 53.2464 9.37867 53.0438 9.896C52.8411 10.4133 52.7371 11.008 52.7318 11.68C52.7424 12.7147 52.9824 13.5467 53.4518 14.176C53.9211 14.8 54.6198 15.112 55.5477 15.112C56.1344 15.112 56.6331 14.9787 57.0438 14.712C57.4598 14.44 57.7744 14.0453 57.9878 13.528L59.1718 13.88C58.8518 14.648 58.3824 15.2347 57.7638 15.64C57.1451 16.04 56.4064 16.24 55.5477 16.24ZM62.964 16V8.448H59.9V7.36H67.204V8.448H64.14V16H62.964ZM72.6094 16.24C71.8147 16.24 71.1427 16.04 70.5934 15.64C70.044 15.2347 69.628 14.688 69.3454 14C69.0627 13.3067 68.9214 12.5307 68.9214 11.672C68.9214 10.7973 69.0627 10.0187 69.3454 9.336C69.6334 8.648 70.0547 8.10667 70.6094 7.712C71.164 7.31733 71.8467 7.12 72.6574 7.12C73.4467 7.12 74.124 7.32 74.6894 7.72C75.2547 8.12 75.6867 8.664 75.9854 9.352C76.2894 10.04 76.4414 10.8133 76.4414 11.672C76.4414 12.536 76.2894 13.312 75.9854 14C75.6814 14.688 75.244 15.2347 74.6734 15.64C74.1027 16.04 73.4147 16.24 72.6094 16.24ZM68.7214 19.84V7.36H69.7774V13.864H69.9054V19.84H68.7214ZM72.4894 15.144C73.092 15.144 73.5934 14.992 73.9934 14.688C74.3934 14.384 74.692 13.9707 74.8894 13.448C75.092 12.92 75.1934 12.328 75.1934 11.672C75.1934 11.0213 75.0947 10.4347 74.8974 9.912C74.7 9.38933 74.3987 8.976 73.9934 8.672C73.5934 8.368 73.084 8.216 72.4654 8.216C71.8627 8.216 71.3614 8.36267 70.9614 8.656C70.5667 8.94933 70.2707 9.35733 70.0734 9.88C69.876 10.3973 69.7774 10.9947 69.7774 11.672C69.7774 12.3387 69.876 12.936 70.0734 13.464C70.2707 13.9867 70.5694 14.3973 70.9694 14.696C71.3694 14.9947 71.876 15.144 72.4894 15.144ZM81.8061 16.24C80.9475 16.24 80.2141 16.0453 79.6061 15.656C78.9981 15.2667 78.5315 14.728 78.2061 14.04C77.8808 13.352 77.7181 12.5627 77.7181 11.672C77.7181 10.7653 77.8835 9.97067 78.2141 9.288C78.5448 8.60533 79.0141 8.07467 79.6221 7.696C80.2355 7.312 80.9635 7.12 81.8061 7.12C82.6701 7.12 83.4061 7.31467 84.0141 7.704C84.6275 8.088 85.0941 8.624 85.4141 9.312C85.7395 9.99467 85.9021 10.7813 85.9021 11.672C85.9021 12.5787 85.7395 13.376 85.4141 14.064C85.0888 14.7467 84.6195 15.28 84.0061 15.664C83.3928 16.048 82.6595 16.24 81.8061 16.24ZM81.8061 15.112C82.7661 15.112 83.4808 14.7947 83.9501 14.16C84.4195 13.52 84.6541 12.6907 84.6541 11.672C84.6541 10.6267 84.4168 9.79467 83.9421 9.176C83.4728 8.55733 82.7608 8.248 81.8061 8.248C81.1608 8.248 80.6275 8.39467 80.2061 8.688C79.7901 8.976 79.4781 9.37867 79.2701 9.896C79.0675 10.408 78.9661 11 78.9661 11.672C78.9661 12.712 79.2061 13.5467 79.6861 14.176C80.1661 14.8 80.8728 15.112 81.8061 15.112ZM91.2509 6.336C90.8722 6.336 90.5255 6.24267 90.2109 6.056C89.8962 5.86933 89.6455 5.62133 89.4589 5.312C89.2775 4.99733 89.1869 4.65067 89.1869 4.272H90.1629C90.1629 4.57067 90.2695 4.82667 90.4829 5.04C90.6962 5.25333 90.9522 5.36 91.2509 5.36C91.5549 5.36 91.8109 5.25333 92.0189 5.04C92.2322 4.82667 92.3389 4.57067 92.3389 4.272H93.3149C93.3149 4.65067 93.2215 4.99733 93.0349 5.312C92.8535 5.62133 92.6055 5.86933 92.2909 6.056C91.9762 6.24267 91.6295 6.336 91.2509 6.336ZM94.5309 7.36V16H93.3869V9.272L88.6509 16H87.6589V7.36H88.8029V14.032L93.5469 7.36H94.5309ZM96.7683 16L96.7763 7.36H97.9603V11.52L101.816 7.36H103.384L99.3363 11.68L103.912 16H102.2L97.9603 11.84V16H96.7683ZM111.578 7.36V16H110.434V9.272L105.698 16H104.706V7.36H105.85V14.032L110.594 7.36H111.578Z" />
+                        <path d="M13.5486 1.12242H13.5487C13.9509 1.2565 14.3008 1.51375 14.5486 1.85774C14.7965 2.20172 14.9298 2.61499 14.9297 3.03898V3.09367C14.9296 3.62186 15.1363 4.12908 15.5057 4.50662C15.8751 4.88417 16.3776 5.10199 16.9057 5.11341L17.0238 5.11597C17.3914 5.12391 17.7499 5.23205 18.0605 5.42871C18.3711 5.62538 18.6222 5.90311 18.7866 6.23197V6.23197C18.9762 6.61119 19.0417 7.04047 18.9737 7.45898C18.9057 7.87748 18.7078 8.26398 18.4079 8.5637L18.3692 8.60234C17.9956 8.97573 17.7832 9.4806 17.7774 10.0088C17.7716 10.5369 17.973 11.0463 18.3383 11.4278L18.42 11.5131C18.6743 11.7786 18.8513 12.1085 18.9319 12.4672C19.0125 12.826 18.9937 13.1999 18.8774 13.5487V13.5487C18.7433 13.9509 18.4861 14.3007 18.1421 14.5486C17.7981 14.7965 17.3848 14.9298 16.9608 14.9297H16.9062C16.378 14.9295 15.8708 15.1363 15.4932 15.5057C15.1157 15.875 14.8978 16.3776 14.8864 16.9057L14.8839 17.0238C14.8759 17.3914 14.7678 17.7498 14.5711 18.0605C14.3745 18.3711 14.0967 18.6222 13.7679 18.7866V18.7866C13.3886 18.9762 12.9594 19.0417 12.5409 18.9737C12.1224 18.9057 11.7359 18.7078 11.4361 18.4079L11.3975 18.3692C11.0241 17.9956 10.5192 17.7832 9.99108 17.7774C9.46293 17.7716 8.95352 17.973 8.57205 18.3383L8.48676 18.42C8.22123 18.6743 7.89132 18.8513 7.5326 18.9319C7.17388 19.0125 6.79997 18.9936 6.45117 18.8774C6.04894 18.7433 5.69911 18.486 5.45125 18.142C5.20338 17.7981 5.07006 17.3848 5.07018 16.9608V16.9061C5.07032 16.378 4.86355 15.8707 4.49418 15.4932C4.12481 15.1156 3.62223 14.8978 3.09417 14.8864L2.97603 14.8838C2.60846 14.8759 2.25002 14.7678 1.93937 14.5711C1.62873 14.3744 1.37766 14.0967 1.21325 13.7678V13.7678C1.02363 13.3886 0.958159 12.9594 1.02611 12.5409C1.09407 12.1224 1.292 11.7359 1.59185 11.4362L1.63055 11.3975C2.00413 11.0241 2.21658 10.5193 2.22236 9.9911C2.22815 9.46296 2.02681 8.95356 1.66149 8.57208L1.57973 8.48671C1.32545 8.22117 1.14846 7.89126 1.06786 7.53255C0.987266 7.17383 1.00611 6.79993 1.12237 6.45114V6.45114C1.25645 6.0489 1.51371 5.69907 1.8577 5.45121C2.20169 5.20334 2.61496 5.07002 3.03895 5.07014H3.09362C3.6218 5.07028 4.12902 4.86351 4.50656 4.49414C4.88411 4.12477 5.10193 3.62219 5.11335 3.09414L5.1159 2.97599C5.12385 2.60842 5.23198 2.25 5.42864 1.93936C5.62529 1.62871 5.90301 1.37765 6.23186 1.21322C6.61108 1.02361 7.04036 0.958152 7.45886 1.02613C7.87737 1.0941 8.26387 1.29206 8.56359 1.59195L8.60221 1.63059C8.9756 2.00418 9.48048 2.21664 10.0086 2.22242C10.5368 2.22819 11.0462 2.02683 11.4277 1.6615L11.5129 1.57983C11.7785 1.3255 12.1084 1.1485 12.4671 1.06789C12.8259 0.987286 13.1998 1.00614 13.5486 1.12242V1.12242Z"  stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </symbol>
+            </svg>
+            <svg display="none">
+                <symbol id="logout" viewBox="0 0 23 23">
+                    <path
+                        d="M3.92773 22.9993H9.92773C11.582 22.9993 12.9277 21.6536 12.9277 19.9994V15.9995C12.9277 15.4473 12.4805 14.9995 11.9277 14.9995C11.375 14.9995 10.9277 15.4473 10.9277 15.9995V19.9994C10.9277 20.5506 10.4795 20.9993 9.92773 20.9993H3.92773C3.37598 20.9993 2.92773 20.5506 2.92773 19.9994V3.9999C2.92773 3.44865 3.37598 2.99993 3.92773 2.99993H9.92773C10.4795 2.99993 10.9277 3.44865 10.9277 3.9999V7.99977C10.9277 8.55199 11.375 8.99973 11.9277 8.99973C12.4805 8.99973 12.9277 8.55199 12.9277 7.99977V3.9999C12.9277 2.34566 11.582 1 9.92773 1H3.92773C2.27344 1 0.927734 2.34566 0.927734 3.9999V19.9994C0.927734 21.6536 2.27344 22.9993 3.92773 22.9993Z" />
+                    <path
+                        d="M6.92773 12.0002C6.92773 12.5525 7.37503 13.0002 7.9278 13.0002H19.5144L15.2212 17.2932C14.8306 17.6838 14.8306 18.3167 15.2212 18.7073C15.4165 18.9026 15.6724 19.0002 15.9283 19.0002C16.1842 19.0002 16.44 18.9026 16.6354 18.7073L22.6351 12.7079C22.7276 12.6156 22.8009 12.5049 22.8517 12.3821C22.9527 12.1379 22.9527 11.8626 22.8517 11.6183C22.8009 11.4956 22.7276 11.3849 22.6351 11.2925L16.6354 5.29321C16.2447 4.90259 15.6119 4.90259 15.2212 5.29321C14.8306 5.68384 14.8306 6.31665 15.2212 6.70728L19.5144 11.0002H7.9278C7.37503 11.0002 6.92773 11.448 6.92773 12.0002Z" />
+                </symbol>
+            </svg>
+            <main class="content">
+                <section class="lk-content">
+                    <div class="container">
+                        <div class="lk-content__row">
+                            <aside class="lk-content__aside">
+                                <div class="aside-lk__porfile profile-lk">
+                                    <div class="profile-lk__img">
+                                        <img src="img/all/account.png" alt="">
+                                    </div>
+                                    <div class="profile-lk__text">
+                                        <div class="name">Евгений Талимончук</div>
+                                        <div class="rating">
+
+                                            <span id="count">(24)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="profile-lk__title">Мой профиль</p>
+                                <div class="aside-lk__items">
+                                    <div class="aside-lk__item">
+                                        <div class="aside-lk__img">
+                                            <svg>
+                                                <use xlink:href="#delivery"></use>
+                                            </svg>
+                                        </div>
+                                        <button data-id="deliver" class="aside-lk__button">Доставка</button>
+                                    </div>
+                                    <div class="aside-lk__item">
+                                        <div class="aside-lk__img">
+                                            <svg>
+                                                <use xlink:href="#pay"></use>
+                                            </svg>
+                                        </div>
+                                        <button data-id="payement" class="aside-lk__button">Ожидает оплаты</button>
+                                    </div>
+                                    <div class="aside-lk__item">
+                                        <div class="aside-lk__img">
+                                            <svg>
+                                                <use xlink:href="#noty"></use>
+                                            </svg>
+                                        </div>
+                                        <button data-id="notyfication" class="aside-lk__button">Уведомления</button>
+                                    </div>
+                                    <div class="aside-lk__item mb-50">
+                                        <div class="aside-lk__img">
+                                            <svg>
+                                                <use xlink:href="#order"></use>
+                                            </svg>
+                                        </div>
+                                        <button data-id="orders" class="aside-lk__button">Заказы</button>
+                                    </div>
+                                    <div class="aside-lk__item">
+                                        <div class="aside-lk__img">
+                                            <svg>
+                                                <use xlink:href="#wallet"></use>
+                                            </svg>
+                                        </div>
+                                        <button data-id="bonus" class="aside-lk__button">Мой баланс</button>
+                                    </div>
+                                    <div class="aside-lk__item  mb-50">
+                                        <div class="aside-lk__img">
+                                            <svg>
+                                                <use xlink:href="#shelter"></use>
+                                            </svg>
+                                        </div>
+                                        <button data-id="callback" class="aside-lk__button">Настройки</button>
+                                    </div>
+                                    <div class="aside-lk__item">
+                                        <div class="aside-lk__img">
+                                            <svg>
+                                                <use xlink:href="#logout"></use>
+                                            </svg>
+                                        </div>
+                                        <button class="aside-lk__button">Выйти из профиля</button>
+                                    </div>
+                                </div>
+                            </aside>
+                            <div class="lk-content__main">
+                                <div id="deliver" class="lk__tabs lk-content__order order-lk _lk__tabs">
+                                    <p class="order-lk__date">Доставим до <span>14-15</span> июня</p>
+                                    <div class="hide__title">
+                                        <p>Заказ <span>№35487215482</span></p>
+                                    </div>
+                                    <div class="hide__block">
+                                        <div class="order-lk-products__row">
+                                            <article class="product">
+                                                <div class="product__img">
+                                                    <img src="img/catalog/4.png" alt="">
+                                                </div>
+                                                <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                <div class="product__btns">
+                                                    <div class="product__plus">+</div>
+                                                    <div class="product__price">3 200 </div>
+                                                    <div class="product__rub">₽</div>
+                                                </div>
+                                            </article>
+                                            <article class="product">
+                                                <div class="product__img">
+                                                    <img src="img/catalog/1.png" alt="">
+                                                </div>
+                                                <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                <div class="product__btns">
+                                                    <div class="product__plus">+</div>
+                                                    <div class="product__price">2 400</div>
+                                                    <div class="product__rub">₽</div>
+                                                </div>
+                                            </article>
+                                            <article class="product">
+                                                <div class="product__img">
+                                                    <img src="img/catalog/3.png" alt="">
+                                                </div>
+                                                <p class="product__name">Мужская серая оверсайз кофта</p>
+                                                <div class="product__btns">
+                                                    <div class="product__plus">+</div>
+                                                    <div class="product__price">3 200 </div>
+                                                    <div class="product__rub">₽</div>
+                                                </div>
+                                            </article>
+                                            <article class="product">
+                                                <div class="product__img">
+                                                    <img src="img/catalog/2.png" alt="">
+                                                </div>
+                                                <p class="product__name">Мужская черная оверсайз футболка</p>
+                                                <div class="product__btns">
+                                                    <div class="product__plus">+</div>
+                                                    <div class="product__price">3 200 </div>
+                                                    <div class="product__rub">₽</div>
+                                                </div>
+                                            </article>
+                                            <article class="product">
+                                                <div class="product__img">
+                                                    <img src="img/catalog/4.png" alt="">
+                                                </div>
+                                                <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                <div class="product__btns">
+                                                    <div class="product__plus">+</div>
+                                                    <div class="product__price">3 200 </div>
+                                                    <div class="product__rub">₽</div>
+                                                </div>
+                                            </article>
+                                            <article class="product">
+                                                <div class="product__img">
+                                                    <img src="img/catalog/1.png" alt="">
+                                                </div>
+                                                <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                <div class="product__btns">
+                                                    <div class="product__plus">+</div>
+                                                    <div class="product__price">2 400</div>
+                                                    <div class="product__rub">₽</div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="order-lk__sum">
+                                        <p>Сумма заказа</p>
+                                        <p>22 400 <span>₽</span></p>
+                                    </div>
+                                </div>
+                                <div id="payement" class="_lk__tabs">
+                                    <h2 class="lk__tabs__title">
+                                        Ожидает оплаты
+                                    </h2>
+                                    <div class="lk__tabs lk-content__order order-lk">
+                                        <div class="hide__title">
+                                            <p>Заказ <span>№35487215482</span></p>
+                                        </div>
+                                        <div class="hide__block">
+                                            <div class="order-lk-products__row">
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/4.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/1.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">2 400</div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/3.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская серая оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/2.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз футболка</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/4.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/1.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">2 400</div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="order-lk__sum">
+                                            <p>Сумма заказа</p>
+                                            <p>22 400 <span>₽</span></p>
+                                            <a href="#">Оплатить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="notyfication" class="_lk__tabs">
+                                    <div class="lk__tabs noty-lk">
+                                        <h3 class="noty-lk__title">Новая коллекция весна-лето</h3>
+                                        <p class="noty-lk__subtitle">Скидка за чек сезона зима-весна от 3000 <span>30%</span></p>
+                                        <a href="#" class="lk__tabs__btn">Посмотреть коллекцию</a>
+                                    </div>
+                                    <div class="lk__tabs noty-lk">
+                                        <h3 class="noty-lk__title">Новая коллекция весна-лето</h3>
+                                        <p class="noty-lk__subtitle">Ваш заказ <span>№3148151418184</span> ожидает на почтовом отделении по аддресу: <span>30%</span></p>
+                                        <p class="noty-lk__address">Челябинск, ул. Лермонтова 21, 3 этаж, офис 4</p>
+                                    </div>
+                                </div>
+                                <div id="orders" class="_lk__tabs">
+                                    <h2 class="lk__tabs__title">
+                                        Ваши заказы
+                                    </h2>
+                                    <div class="lk__tabs lk-content__order order-lk">
+                                        <div class="hide__title">
+                                            <p>Заказ <span>№35487215482</span></p>
+                                        </div>
+                                        <div class="hide__block">
+                                            <div class="order-lk-products__row">
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/4.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/1.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">2 400</div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/3.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская серая оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/2.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз футболка</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/4.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/1.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">2 400</div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="order-lk__sum">
+                                            <p>Сумма заказа</p>
+                                            <p>22 400 <span>₽</span></p>
+                                            <a href="#">Повторить</a>
+                                        </div>
+                                    </div>
+                                    <div class="lk__tabs lk-content__order order-lk">
+                                        <div class="hide__title">
+                                            <p>Заказ <span>№35487215482</span></p>
+                                        </div>
+                                        <div class="hide__block">
+                                            <div class="order-lk-products__row">
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/4.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/1.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">2 400</div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/3.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская серая оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/2.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз футболка</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/4.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная куртка с меховой отделкой</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">3 200 </div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                                <article class="product">
+                                                    <div class="product__img">
+                                                        <img src="img/catalog/1.png" alt="">
+                                                    </div>
+                                                    <p class="product__name">Мужская черная оверсайз кофта</p>
+                                                    <div class="product__btns">
+                                                        <div class="product__plus">+</div>
+                                                        <div class="product__price">2 400</div>
+                                                        <div class="product__rub">₽</div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="order-lk__sum">
+                                            <p>Сумма заказа</p>
+                                            <p>22 400 <span>₽</span></p>
+                                            <a href="#">Повторить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__head head-footer">
+                <div class="head-footer__items">
+                    <div class="head-footer__item">
+                        <h3 class="head-footer__title">Интернет-магазин</h3>
+                            <ul>
+                                <li>
+                                    <a href="catalog.html">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">корзина</a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html">главная</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="head-footer__item">
+                        <h3 class="head-footer__title">Компания</h3>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Лицензии</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Документы</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="head-footer__items">
+                    <div class="head-footer__item head-footer__contacts">
+                        <h3 class="head-footer__title">Контакты</h3>
+                            <ul>
+                                <li class="color-dddddd">+7(980)007-24-34</li>
+                                <li class="color-dddddd">info@chel.lookclvb.ru</li>
+                                <li class="color-dddddd">Челябинск, ул. Лермонтова 21, 3 этаж, офис 4</li>
+                            </ul>
+                        
+                    </div>
+                    <div class="head-footer__item">
+                        <h3 class="head-footer__title">соцсети</h3>
+                            <ul>
+                                <li>
+                                    <img src="img/svgicons/watsup.svg" alt="watsup">
+                                    +7(980)007-24-34
+                                </li>
+                                <li>
+                                    <img src="img/svgicons/telegram.svg" alt="telegram">
+                                    +7(980)007-24-34
+                                </li>
+                                <li>
+                                    <img src="img/svgicons/vk.svg" alt="vk">
+                                    @lookclvb
+                                </li>
+                                <li>
+                                    <img src="img/svgicons/inst.svg" alt="inst">
+                                    @lookclvb
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom bottom-footer">
+                <div class="bottom-footer__item">© 2023 lookclab</div>
+                <div class="bottom-footer__item">
+                    <a href="#">Конфиденциальность</a>
+                    <a href="#">Оферта</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/cdd40c5823.js" crossorigin="anonymous"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+
+</html>
