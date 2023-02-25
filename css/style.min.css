@@ -211,10 +211,10 @@ h6 {
 }
 .cart-header {
   position: absolute;
-  width: 380px;
+  width: 680px;
   background: rgba(51, 51, 51, 0.95);
   border: 1px solid rgba(51, 51, 51, 0.05);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 3%);
   backdrop-filter: blur(2.5px);
   border-radius: 8px;
   display: none;
@@ -222,9 +222,17 @@ h6 {
   gap: 10px;
   padding: 20px;
   opacity: 0;
-  bottom: -730px;
+  bottom: -465px;
   left: -50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-60%, 0%);
+
+}
+
+.cart__items{
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .cart-header__item {
   display: flex;
@@ -291,6 +299,7 @@ h6 {
 .cart-header.active {
   display: flex;
   opacity: 1;
+  z-index: 2;
 }
 
 .intro {
@@ -1433,7 +1442,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #C9AD85;
+  color: #C9AD85 !important;
 }
 .product__price {
   font-size: 18px;
@@ -1711,6 +1720,11 @@ body {
   .footer__head {
     padding: 0px;
   }
+
+  .cart-header p, .cart-header .product__price{
+    color: #333333;
+  }
+
 }
 @media only screen and (max-width: 768px) {
   .intro__title, .intro__subtitle .sale {
@@ -1738,6 +1752,12 @@ body {
     top: 150px;
     left: 50%;
     transform: translate(-50%, 0%);
+  }
+
+  .catalog-intro-bottom__sort .catalog-intro__hover{
+    right: 10px;
+    left: auto;
+    transform: translate(0%, 40px);
   }
   .lk-content__row {
     flex-direction: column;
@@ -1771,8 +1791,18 @@ body {
   .footer__head {
     padding: 0px 0px 20px;
   }
+
+  .cart-header {
+    width: 100%;
+    left: 10px;
+    right: 10px;
+  }
 }
 @media only screen and (max-width: 576px) {
+
+  .cart__items{
+    grid-template-columns: 1fr;
+  }
   .head-footer__items:first-child {
     flex: 1 1 auto;
     justify-content: space-between;
@@ -1804,7 +1834,7 @@ body {
     height: 30px;
     background: url("../img/svgicons/sort.svg") center center no-repeat;
   }
-  .filter-catalog-intro-bottom p, .catalog-intro-bottom__sort p {
+  .filter-catalog-intro-bottom .hidden, .catalog-intro-bottom__sort .hidden {
     font-size: 0px;
   }
   .filter-catalog-intro-bottom .plus {
@@ -1833,6 +1863,12 @@ body {
   .footer__row {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .cart-header{
+    left: 10px;
+    right: 10px;
+    width: auto;
   }
 }
 @media only screen and (max-width: 378px) {
