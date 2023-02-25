@@ -1165,6 +1165,12 @@ p span {
 .item-intro__row {
   display: flex;
   gap: 20px;
+  margin: 50px;
+}
+
+.ps-current, ps-list li{
+border-radius: 8px;
+  overflow: hidden;
 }
 .item-intro__slider {
   flex: 0 0 550px;
