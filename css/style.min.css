@@ -1756,7 +1756,7 @@ body {
     height: 100%;
     padding: 50px 20px;
   }
-  .product:not(:last-child) {
+  .product {
     margin: 0px;
   }
   .catalog-intro__hover {
