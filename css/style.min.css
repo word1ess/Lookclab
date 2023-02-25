@@ -1811,6 +1811,9 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
+  p.hidden{
+    font-size: 0px;
+  }
   .products__row{
     grid-template-columns: repeat(2, 1fr);
   }
