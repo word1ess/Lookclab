@@ -1432,6 +1432,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   margin: 0px 0px 5px;
+  flex: 1 1 auto;
 }
 .product__btns {
   display: flex;
@@ -1810,7 +1811,12 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
-
+  .products__row{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product__img{
+    height: 200px
+  }
   .cart__items{
     grid-template-columns: 1fr;
   }
